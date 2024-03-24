@@ -1,10 +1,11 @@
-import { IoPersonCircleOutline } from 'react-icons/io5';
+import Koopa from '../../images/redkoopa.png';
+ 
 
-const Player = () => {
+const Player = ({ score }) => {
   return (
     <main>
-      <IoPersonCircleOutline />
-      <p>Score: </p>
+      <img src={Koopa} alt='koopa' className="w-24 h-auto" />
+      <p>Score:{score} </p>
     </main>
   );
 };

@@ -1,10 +1,11 @@
-import { FaComputer } from 'react-icons/fa6';
 
-const CPU = () => {
+import Yoshi from '../../images/Yoshi.png';
+
+const CPU = ({ score }) => {
   return (
     <main>
-      <FaComputer />
-      <p>Score:</p>
+      <img src={Yoshi} alt='yoshi' className="w-24 h-auto"></img>
+      Score:{score}
     </main>
   );
 };

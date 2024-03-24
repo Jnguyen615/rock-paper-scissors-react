@@ -1,7 +1,13 @@
+import MarioImage from '../../images/mario.png';
+
 const Header = () => {
   return (
-    <h1 className="text-3xl font-bold">Choose your Game Mode</h1>
-  )
-}
+    <main className="flex flex-col items-center">
+      <img src={MarioImage} alt='flying-mario' className="w-20 h-auto mx-auto"/>
+      <h1 className='text-3xl font-bold'>Koopa Clash</h1>
+      <p className='text-2xl font-bold'>Choose your game mode!</p>
+    </main>
+  );
+};
 
-export default Header 
+export default Header;
