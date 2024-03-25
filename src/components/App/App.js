@@ -6,33 +6,55 @@ import Header from '../Header/Header';
 import Player from '../Player/Player';
 import EasyModePage from '../EasyModePage/EasyModePage';
 import DifficultModePage from '../DifficultModePage/DifficultModePage';
-import './App.css';
+import rainbowRoadImage from '../../images/rainbowroad.jpeg';
+import MarioKart from '../../images/mario-kart.jpeg'
 
 function App() {
-  const [score, setScore] = useState(0);
+  const [playerScore, setPlayerScore] = useState(0);
+  const [cpuScore, setCpuScore] = useState(0);
 
   return (
-    <div className='App flex flex-col'>
+    <div className='relative min-h-screen'>
+      <div className='absolute inset-0 bg-black opacity-50'></div>{' '}
+      <div
+        className='bg-cover bg-center min-h-screen'
+        style={{ backgroundImage: `url(${MarioKart})` }}>
         <Header />
         <div className='flex-grow'></div>
         <div className='flex justify-between'>
-          <Player
-            className='order-1 flex-grow'
-            score={score}
-            setScore={setScore}
-            />
+          <Player className='order-1 flex-grow' playerScore={playerScore} />
           <div className='order-2 flex justify-end'>
-            <CPU setScore={setScore} score={score} />
+            <CPU cpuScore={cpuScore} />
           </div>
         </div>
         <div className='game-select'>
-          <Routes> {/* Use Routes instead of Router */}
+          <Routes>
             <Route path='/' element={<GameSelect />} />
-            <Route path='/easy' element={<EasyModePage />} />
-            <Route path='/difficult' element={<DifficultModePage />} />
+            <Route
+              path='/easy'
+              element={
+                <EasyModePage
+                  playerScore={playerScore}
+                  setPlayerScore={setPlayerScore}
+                  cpuScore={cpuScore}
+                  setCpuScore={setCpuScore}
+                />
+              }
+            />
+            <Route
+              path='/difficult'
+              element={
+                <DifficultModePage
+                  playerScore={playerScore}
+                  setPlayerScore={setPlayerScore}
+                  cpuScore={cpuScore}
+                  setCpuScore={setCpuScore}
+                />
+              }
+            />
           </Routes>
         </div>
-     
+      </div>
     </div>
   );
 }

@@ -4,8 +4,9 @@ const GameSelect = () => {
   return (
     <main className="flex flex-col items-center justify-center"> {/* Added mb-8 for margin-bottom */}
       <div className="text-center">
-        <Link to='/easy' className='classic-mode-button'>
-          <button className='classic-mode-button'>
+        <h1 className='text-white relative z-10 mb-20 mt-20'>Choose your game mode</h1>
+        <Link to='/easy' className='classic-mode-button relative z-10'>
+          <button className='classic-mode-button font-workbench bg-gray-800 rounded-lg p-4 text-white'>
             🕹️ Classic Version 🤞 <br />
             Rules: <br />
             MasterShell &gt; Lightning <br />
@@ -17,8 +18,8 @@ const GameSelect = () => {
 
         <br />
         <br />
-        <Link to='/difficult' className='classic-mode-button'>
-          <button className='challenge-mode-button'>
+        <Link to='/difficult' className='classic-mode-button relative z-10'>
+          <button className='challenge-mode-button bg-gray-800 rounded-lg p-4 text-white font-workbench'>
             🎮 Difficult Version 🤯 <br />
             Rules: <br />
             MasterShell &gt; Lightning &amp; Mushroom <br />
