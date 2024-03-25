@@ -49,6 +49,12 @@ const EasyModePage = ({
       return 'CPU wins!';
     }
   };
+
+  const resetScores = () => {
+    setPlayerScore(0)
+    setCpuScore(0)
+  }
+
   return (
     <div className='flex flex-col items-center'>
       <div className='flex flex-row justify-center'>
@@ -67,48 +73,53 @@ const EasyModePage = ({
       {playerChoice && cpuChoice && (
         <div className='mt-4 flex justify-around w-full'>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-            <h3 className='mr-2 text-white text-2xl'>Player's Choice:</h3>
+            <h3 className='mr-2 text-white text-3xl'>Player's Choice:</h3>
             <div className='flex items-center'>
               <img
                 src={playerChoice.image}
                 alt={playerChoice.name}
                 className='w-24 h-auto mr-2'
               />
-              <p className='text-white text-2xl'>{playerChoice.name}</p>
+              <p className='text-white text-3xl'>{playerChoice.name}</p>
             </div>
           </div>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-            <h3 className='mr-2 text-white text-2xl'>CPU's Choice:</h3>
+            <h3 className='mr-2 text-white text-3xl'>CPU's Choice:</h3>
             <div className='flex items-center'>
               <img
                 src={cpuChoice.image}
                 alt={cpuChoice.name}
                 className='w-24 h-auto mr-2'
               />
-              <p className='text-white text-2xl'>{cpuChoice.name}</p>
+              <p className='text-white text-3xl'>{cpuChoice.name}</p>
             </div>
           </div>
         </div>
       )}
-      {result && <h1 className='mt-4 text-4xl text-white'>{result}</h1>}
+      {result && <h1 className='mb-10 text-6xl text-white relative z-10' >{result}</h1>}
       <div className='mt-4 flex justify-center'>
         <div className='w-100'>
           {' '}
           {/* Set width to half of the parent container */}
           <div className='bg-gray-800 opacity-90 p-4 rounded-lg mt-4'>
-            <h2 className='text-4xl font-bold mb-2 text-white'>Game Rules:</h2>
-            <ul className='list-none ml-4 text-white text-2xl'>
-              <li>MasterShell > Lightning</li>
-              <li>BananaPeel > MasterShell</li>
-              <li>Lightning > BananaPeel</li>
+            <h2 className='text-4xl font-bold mb-2 text-white text-center' >Game Rules:</h2>
+            <ul className='list-none ml-4 text-white text-4xl'>
+              <li>MasterShell &gt; Lightning</li>
+              <li>BananaPeel &gt; MasterShell</li>
+              <li>Lightning &gt; BananaPeel</li>
             </ul>
           </div>
         </div>
       </div>
       <div className='mt-4 flex justify-center'>
+      <button
+          onClick={resetScores}
+          className='bg-gray-700 hover:bg-gray-500 opacity-90 text-white text-3xl font-bold py-2 px-4 rounded mr-4 relative z-10'>
+          Reset Scores
+        </button>
         <Link
           to='/'
-          className='bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded mr-4 relative z-10'>
+          className='bg-gray-700 hover:bg-gray-500 text-white text-3xl font-bold py-2 px-4 rounded mr-4 relative z-10'>
           Back to Main
         </Link>
       </div>
