@@ -25,7 +25,7 @@ const DifficultModePage = ({
 
   const handlePlayerChoice = index => {
     const randomIndex = Math.floor(Math.random() * options.length);
-    const cpuChoice = randomIndex;
+    // const cpuChoice = randomIndex;
     setPlayerChoice(options[index]);
     setCpuChoice(options[randomIndex]);
     const result = determineWinner(options[index], options[randomIndex]);
@@ -93,7 +93,6 @@ const DifficultModePage = ({
                 alt={playerChoice.name}
                 className='w-24 h-auto mr-2'
               />
-              <p className='text-white text-3xl'>{playerChoice.name}</p>
             </div>
           </div>
         )}
@@ -106,7 +105,6 @@ const DifficultModePage = ({
                 alt={cpuChoice.name}
                 className='w-24 h-auto mr-2'
               />
-              <p className='text-white text-3xl'>{cpuChoice.name}</p>
             </div>
           </div>
         )}

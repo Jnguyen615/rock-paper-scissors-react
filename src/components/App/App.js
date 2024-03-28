@@ -6,8 +6,7 @@ import Header from '../Header/Header';
 import Player from '../Player/Player';
 import EasyModePage from '../EasyModePage/EasyModePage';
 import DifficultModePage from '../DifficultModePage/DifficultModePage';
-import rainbowRoadImage from '../../images/rainbowroad.jpeg';
-import MarioKart from '../../images/mario-kart.jpeg'
+import MarioKart from '../../images/mario-kart.jpeg';
 
 function App() {
   const [playerScore, setPlayerScore] = useState(0);
@@ -17,7 +16,7 @@ function App() {
     <div className='relative min-h-screen'>
       <div className='absolute inset-0 bg-black opacity-50'></div>{' '}
       <div
-        className='bg-cover bg-center min-h-screen'
+        className='bg-cover bg-center min-h-screen sm:min-h-screen md:bg-cover bg-center'
         style={{ backgroundImage: `url(${MarioKart})` }}>
         <Header />
         <div className='flex-grow'></div>

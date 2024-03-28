@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@screen xs {
+  min-width: 375px;
+  max-width: 376px;
+}
