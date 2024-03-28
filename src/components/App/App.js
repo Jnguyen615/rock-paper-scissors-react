@@ -16,8 +16,13 @@ function App() {
     <div className='relative min-h-screen'>
       <div className='absolute inset-0 bg-black opacity-50'></div>{' '}
       <div
-        className='bg-cover bg-center min-h-screen sm:min-h-screen md:bg-cover bg-center'
-        style={{ backgroundImage: `url(${MarioKart})` }}>
+  className='bg-cover bg-center min-h-screen sm:min-h-screen md:bg-cover bg-center'
+  style={{
+    backgroundImage: `url(${MarioKart})`,
+    height: '125vh', 
+    backgroundAttachment: 'fixed', 
+  }}
+>
         <Header />
         <div className='flex-grow'></div>
         <div className='flex justify-between'>

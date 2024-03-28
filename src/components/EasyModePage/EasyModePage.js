@@ -192,7 +192,7 @@ const EasyModePage = ({
               src={option.image}
               alt={option.name}
               onClick={() => handlePlayerChoice(index)}
-              className='w-20 sm:w-40 mr-4 cursor-pointer mx-12 sm:mx-24'
+              className='w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mr-4 cursor-pointer mx-6 sm:mx-12 md:mx-24'
               />
           ))}
         </div>
@@ -205,7 +205,7 @@ const EasyModePage = ({
               <img
                 src={playerChoice.image}
                 alt={playerChoice.name}
-                className='w-20 sm:w-24 h-auto mr-2'
+                className='w-24 h-auto sm:w-32 md:w-24 mr-4 mx-6 sm:mx-12 md:mx-24'
               />
             </div>
           </div>
@@ -215,7 +215,7 @@ const EasyModePage = ({
               <img
                 src={cpuChoice.image}
                 alt={cpuChoice.name}
-                className='w-20 sm:w-24 h-auto mr-2'
+                className='w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 mr-4 mx-6 sm:mx-12 md:mx-24'
               />
             </div>
           </div>
