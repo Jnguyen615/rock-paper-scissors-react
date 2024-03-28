@@ -84,7 +84,7 @@ const DifficultModePage = ({
               <img
                 src={playerChoice.image}
                 alt={playerChoice.name}
-                className='w-20 sm:w-24 h-auto mr-2'
+                className= 'w-20 sm:w-40 mr-4 cursor-pointer mx-12 sm:mx-24'
               />
             </div>
           </div>
