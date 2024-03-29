@@ -73,7 +73,7 @@ return (
     {playerChoice && cpuChoice && (
       <div className='mt-4 flex justify-around w-full overflow-x-auto'>
         <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-          <h3 className='mr-2 text-white text-xl sm:text-lg md:text-xl lg:text-2xl'>
+          <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
             Player's Choice:
           </h3>
 
@@ -86,7 +86,7 @@ return (
           </div>
         </div>
         <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-          <h3 className='mr-2 text-white text-xl'>CPU's Choice:</h3>
+        <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>CPU's Choice:</h3>
           <div className='flex items-center ml-2 sm:ml-4'>
             <img
               src={cpuChoice.image}
