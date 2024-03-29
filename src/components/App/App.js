@@ -21,8 +21,7 @@ function App() {
           backgroundImage: `url(${MarioKart})`,
           height: '110%',
           backgroundAttachment: 'fixed',
-        }}
-      >
+        }}>
         <Header />
         <div className='flex-grow'></div>
         <div className='flex justify-between'>
