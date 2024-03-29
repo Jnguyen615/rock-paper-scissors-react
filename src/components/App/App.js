@@ -13,16 +13,16 @@ function App() {
   const [cpuScore, setCpuScore] = useState(0);
 
   return (
-    <div className='relative min-h-screen'>
+    <div className='relative min-h-screen overflow-hidden'>
       <div className='absolute inset-0 bg-black opacity-50'></div>{' '}
       <div
-  className='bg-cover bg-center min-h-screen sm:min-h-screen md:bg-cover bg-center'
-  style={{
-    backgroundImage: `url(${MarioKart})`,
-    height: '125vh', 
-    backgroundAttachment: 'fixed', 
-  }}
->
+        className='absolute inset-0 bg-cover bg-center'
+        style={{
+          backgroundImage: `url(${MarioKart})`,
+          height: '110%',
+          backgroundAttachment: 'fixed',
+        }}
+      >
         <Header />
         <div className='flex-grow'></div>
         <div className='flex justify-between'>
@@ -31,7 +31,7 @@ function App() {
             <CPU cpuScore={cpuScore} />
           </div>
         </div>
-        <div className='game-select'>
+        <div className='game-select' style={{ marginTop: '-10vh' }}>
           <Routes>
             <Route path='/' element={<GameSelect />} />
             <Route
