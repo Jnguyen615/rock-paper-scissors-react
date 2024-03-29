@@ -79,26 +79,26 @@ const DifficultModePage = ({
       {playerChoice && cpuChoice && (
         <div className='mt-4 flex justify-around w-full overflow-x-auto'>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-            <h3 className='mr-2 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
+          <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
               Player's Choice:
             </h3>
             <div className='flex items-center justify-center'>
-              <img
+            <img
                 src={playerChoice.image}
                 alt={playerChoice.name}
-                className='w-16 h-16 sm:w-20 md:w-24 lg:w-32 xl:w-40 mx-1 sm:mx-2 md:mx-2 lg:mx-4 xl:mx-5'
+                className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 mr-2 mx-3 sm:mx-6 md:mx-12'
               />
             </div>
           </div>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-            <h3 className='mr-2 text-white text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl'>
+          <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
               CPU's Choice:
             </h3>
             <div className='flex items-center ml-4 sm:ml-8'>
-              <img
+            <img
                 src={cpuChoice.image}
                 alt={cpuChoice.name}
-                className='w-16 h-16 sm:w-20 md:w-24 lg:w-32 mr-4 mx-6 sm:mx-12 md:mx-24'
+                className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 mr-2 mx-3 sm:mx-6 md:mx-12'
               />
             </div>
           </div>
