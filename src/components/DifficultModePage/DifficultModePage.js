@@ -210,7 +210,7 @@ const DifficultModePage = ({
               src={option.image}
               alt={option.name}
               onClick={() => handlePlayerChoice(index)}
-              className='w-16 h-15 sm:w-32 sm:h-32 md:w-40 md:h-40 mr-4 cursor-pointer mx-6 sm:mx-12 md:mx-24'
+              className='w-16 h-15 sm:w-32 sm:h-32 md:w-40 md:h-40 mr-4 cursor-pointer mx-6 sm:mx-12 md:mx-24 mt-20 mb-10 bg-gray-700 opacity-90 rounded-lg'
             />
           ))}
         </div>
