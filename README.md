@@ -2,7 +2,7 @@
 
 <div align=center> 
 
-<a href="https://vercel.com/jen-nguyens-projects/koopa-clash/5jeqZhVXu7KDQdKu8R6okfDuQubN" style="font-size: 30px;">Deployed Link</a>
+<a href="https://koopa-clash-q386c96wl-jen-nguyens-projects.vercel.app/" style="font-size: 30px;">Deployed Link</a>
 
 ### Contributors 👩🏻‍💻
 
