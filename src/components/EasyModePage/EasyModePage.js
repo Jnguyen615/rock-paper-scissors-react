@@ -65,7 +65,7 @@ const EasyModePage = ({
               src={option.image}
               alt={option.name}
               onClick={() => handlePlayerChoice(index)}
-              className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-2 sm:mx-6 md:mx-12 bg-gray-700 opacity-90 rounded-lg mb-10 mt-20'
+              className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-32 lg:h-32 mr-2 sm:mx-6 md:mx-12 bg-gray-700 opacity-90 rounded-lg mb-10 mt-20 cursor-pointer hover:bg-gray-500 '
             />
           ))}
         </div>
@@ -118,18 +118,19 @@ const EasyModePage = ({
           </div>
         </div>
       </div>
-      <div className='mt-4 flex justify-center'>
-        <button
-          onClick={resetScores}
-          className='bg-gray-700 hover:bg-gray-500 opacity-90 text-white text-lg sm:text-xl font-bold py-2 px-4 rounded mr-2 relative z-10'>
-          Reset Scores
-        </button>
-        <Link
-          to='/'
-          className='bg-gray-700 hover:bg-gray-500 text-white text-lg sm:text-xl font-bold py-2 px-4 rounded mr-2 relative z-10'>
-          Back to Main
-        </Link>
-      </div>
+      <div className='flex justify-center mt-2'>
+  <button
+    onClick={resetScores}
+    className='bg-gray-700 hover:bg-gray-500 opacity-90 text-white text-xl sm:text-3xl font-bold py-2 px-4 rounded mr-4 relative z-10'>
+    Reset Scores
+  </button>
+  <Link
+    to='/'
+    className='bg-gray-700 hover:bg-gray-500 text-white text-xl sm:text-3xl font-bold py-2 px-4 rounded mr-4 relative z-10'>
+    Back to Main
+  </Link>
+</div>
+
     </div>
   );
 };
