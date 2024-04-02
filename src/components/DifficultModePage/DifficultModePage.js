@@ -79,11 +79,11 @@ const DifficultModePage = ({
       {playerChoice && cpuChoice && (
         <div className='mt-4 flex justify-around w-full overflow-x-auto'>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-          <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
+            <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
               Player's Choice:
             </h3>
             <div className='flex items-center justify-center'>
-            <img
+              <img
                 src={playerChoice.image}
                 alt={playerChoice.name}
                 className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 mr-2 mx-3 sm:mx-6 md:mx-12'
@@ -91,11 +91,11 @@ const DifficultModePage = ({
             </div>
           </div>
           <div className='bg-gray-700 opacity-90 p-4 rounded-lg flex items-center relative z-10'>
-          <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
+            <h3 className='mr-2 text-white sm:text-lg md:text-xl lg:text-4xl'>
               CPU's Choice:
             </h3>
             <div className='flex items-center ml-4 sm:ml-8'>
-            <img
+              <img
                 src={cpuChoice.image}
                 alt={cpuChoice.name}
                 className='w-16 h-16 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 mr-2 mx-3 sm:mx-6 md:mx-12'
@@ -108,13 +108,12 @@ const DifficultModePage = ({
         <h1 className='mb-10 text-6xl text-white relative z-10'>{result}</h1>
       )}
       <div className='mt-4 flex justify-center'>
-        <div className='w-full sm:w-auto'>
-          <div className='bg-gray-800 opacity-90 p-4 rounded-lg mt-4'>
+        <div className='w-full sm:w-auto pt-0'>
+          <div className='max-w-lg mx-auto p-4 bg-gray-800 rounded-lg'>
             <h2 className='text-3xl sm:text-4xl font-bold mb-2 text-white text-center'>
               Game Rules:
             </h2>
-            <ul className='list-none ml-2 text-white text-base sm:text-lg md:text-xl lg:text-4xl'>
-              {' '}
+            <ul className='list-none ml-2 text-white text-base sm:text-lg md:text-xl lg:text-4xl mt-2'>
               <li>MasterShell &gt; Lightning</li>
               <li>BananaPeel &gt; MasterShell</li>
               <li>Lightning &gt; BananaPeel</li>
